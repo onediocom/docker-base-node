@@ -19,7 +19,7 @@ RUN wget -q "http://johnvansickle.com/ffmpeg/releases/ffmpeg-$FFMPEG_VERSION-64b
   tar -xf ffmpeg-$FFMPEG_VERSION-64bit-static.tar.xz && cd ffmpeg-$FFMPEG_VERSION-64bit-static && \
   mv ffmpeg ffmpeg-10bit ffprobe qt-faststart /usr/local/bin/
 
-RUN wget -q https://s3.amazonaws.com/Onedio/bin/phantomjs && mv phantomjs /usr/bin && chmod +x /usr/bin/phantomjs
+RUN wget -q https://github.com/Pyppe/phantomjs2.0-ubuntu14.04x64/raw/master/bin/phantomjs && mv phantomjs /usr/bin && chmod +x /usr/bin/phantomjs
 
 RUN npm install -g npm && npm cache clear
 
