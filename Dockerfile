@@ -12,7 +12,7 @@ RUN wget -q "http://www.lcdf.org/gifsicle/gifsicle-$GIFSICLE_VERSION.tar.gz" && 
   tar -zxf "gifsicle-$GIFSICLE_VERSION.tar.gz" && cd gifsicle-$GIFSICLE_VERSION && \
   ./configure && make && make install
 
-RUN wget -q "http://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" && \
+RUN wget -q "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" && \
   tar -zxf "node-v$NODE_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1
 
 RUN wget -q "http://johnvansickle.com/ffmpeg/releases/ffmpeg-$FFMPEG_VERSION-64bit-static.tar.xz" && \
